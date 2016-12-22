@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.prateek.flashlight.MainActivity">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b_on_off"
+        android:scaleType="fitCenter"
+        android:background="@color/colorBackground"
+        android:id="@+id/off"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flash Light"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/exit"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/exit"
+        android:onClick="onExit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:text="Speed 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/off"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/control" />
+
+    <Button
+        android:text="Speed 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/control"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/control1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/control2"
+        android:layout_alignBaseline="@+id/control1"
+        android:layout_alignBottom="@+id/control1"
+        android:layout_alignEnd="@+id/exit"
+        android:text="Speed 3" />
+</RelativeLayout>
